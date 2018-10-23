@@ -52,9 +52,9 @@ def create_spatial_data(gdf):
         else:
           create_raster(layer, shape, grid, index, pixel_size, output)
 
-def get_data(layer, gdf):
-  print(layer)
-  frame = gdf[gdf['ga:eventAction'] == "Layer:"+layer]
+def get_data(layer_set, gdf):
+  layers = ["Layer:"+layer for layer in layer_set]
+  frame = gdf[gdf['ga:eventAction'].isin(layers)]
   return parser.explode(frame)    
   
 def create_grid(shape, weighting, pixel_size = PIXEL_SIZE):
