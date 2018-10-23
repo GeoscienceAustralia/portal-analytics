@@ -1,12 +1,26 @@
 {
   "layers" :
   {
-    "mineral_occurrences":"Mineral Occurrences",
-    "mines":"Mines",
-    "mineral_tenements":"Mineral Tenements",
-    "scanned_250K_maps":"Scanned 250K Geological Map Index",
-    "nvcl":"National Virtual Core Library",
-    "all_boreholes":"All Boreholes"},
+    "mineral_occurrences":["Mineral Occurrences",
+      "Mineral Occurrences (new version)",
+      "Mineral Occurrences (old version)",
+      "Mineral Deposits",
+      "Commodities, Reserves and Resources",
+      "Mineral Resources and Reserves"],
+    "mines":["Mines",
+      "Mines (old version)",
+      "Mines (Geoscience Australia)",
+      "Mines (new version)",
+      "Mining Activity"],
+    "mineral_tenements":["Mineral Tenements"],
+    "scanned_250K_maps":["Scanned 250K Geological Map Index"],
+    "geological_maps" : ["Geological units (lithology)",
+                        "Geological units (lithostratigraphy)",
+                        "Contacts, faults, dykes, marker beds",
+                        "Geological units (age)"],
+      
+    "nvcl":["National Virtual Core Library"],
+    "all_boreholes":["All Boreholes"]},
   
     "actions" : ["AddLayer","Query"],
   
